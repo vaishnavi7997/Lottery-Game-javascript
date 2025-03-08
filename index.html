@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Game</title>
+</head>
+<style>
+    body{
+        width: 180vh;
+        margin: auto;
+    }
+    h1{
+        color: black;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .lottery-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        background-color: rgb(119, 66, 75);
+        border-color: palevioletred;
+        color: white;
+        padding: 15px;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-top: 0%;
+    }
+    button:hover{
+        background-color: rgb(100, 54, 62);
+    }
+    h2{
+        color: rgb(9, 21, 104);
+    }
+    .box{
+        width: 150px;
+        height: 55px;
+        background-color: rgba(216, 112, 147, 0.712);
+        color: black;
+        display: flex;
+        border-radius: 5px;
+        border-color: rgb(52, 18, 52);
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 15px;
+        margin: 7px;
+    }
+    .lottery-sheet-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .winningBox{
+        background-color: rgba(51, 71, 22, 0.858);
+        color: white;
+    }
+    .highlightedBox{
+        border: 5px solid brown;
+    }
+      
+</style>
+
+<body>
+    <h1>Lottery Game</h1>
+        <div class="lottery-container">
+            <div class="lottery-sheet-container" id="lotterySheetContainer">
+                <!-- <div class="box highlightedBox">1. Notebook</div>  -->
+                <!-- <div class="box">2. Pen Set</div> -->      
+            </div>
+            <h2 id="result"></h2>
+            <button id="pickNumberBtn">Pick a Number</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
